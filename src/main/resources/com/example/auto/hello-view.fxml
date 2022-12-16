@@ -5,13 +5,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auto.HelloController">
    <children>
       <AnchorPane layoutX="-8.0" layoutY="103.0" prefHeight="403.0" prefWidth="858.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <Button fx:id="userButton" layoutX="355.0" layoutY="142.0" mnemonicParsing="false" onAction="#userEnter" prefHeight="49.0" prefWidth="148.0" style="-fx-background-color: #BC8F8F;" text="Пользователь" />
-            <Button fx:id="adminButton" layoutX="355.0" layoutY="226.0" mnemonicParsing="false" onAction="#adminEnter" prefHeight="49.0" prefWidth="148.0" style="-fx-background-color: #BC8F8F;" text="Администратор" />
+            <Button fx:id="userButton" layoutX="341.0" layoutY="143.0" mnemonicParsing="false" onAction="#userEnter" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #BC8F8F;" text="Пользователь">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button fx:id="adminButton" layoutX="341.0" layoutY="240.0" mnemonicParsing="false" onAction="#adminEnter" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #BC8F8F;" text="Администратор">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
             <Label layoutX="351.0" layoutY="66.0" text="Выберите роль">
                <font>
                   <Font name="System Italic" size="22.0" />

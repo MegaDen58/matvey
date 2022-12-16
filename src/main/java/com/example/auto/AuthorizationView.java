@@ -2,9 +2,14 @@ package com.example.auto;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 public class AuthorizationView {
 
@@ -15,10 +20,18 @@ public class AuthorizationView {
     private URL location;
 
     @FXML
-    private AnchorPane loginField;
+    private Button authAdminButton;
+
+    @FXML
+    private TextField loginField;
 
     @FXML
     private PasswordField passwordField;
 
+    @FXML
+    void adminEnterButton(ActionEvent event) {
+
+
+    }
 
 }
