@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auto.UserView">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auto.UserView">
    <children>
       <AnchorPane layoutX="-8.0" layoutY="103.0" prefHeight="399.0" prefWidth="858.0" style="-fx-background-color: #FFFFFF;">
          <children>
@@ -32,17 +32,8 @@
                </font>
             </CheckBox>
             <ComboBox fx:id="seasonMenu" layoutX="323.0" layoutY="197.0" prefHeight="43.0" prefWidth="240.0" promptText="Выберите сезонность использования авто" />
-            <Label layoutX="611.0" layoutY="75.0" text="Количество водителей">
-               <font>
-                  <Font name="System Italic" size="19.0" />
-               </font>
-            </Label>
-            <CheckBox layoutX="611.0" layoutY="111.0" mnemonicParsing="false" text="страховка без ограничений">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </CheckBox>
             <ComboBox fx:id="kbmMenu" layoutX="601.0" layoutY="197.0" prefHeight="43.0" prefWidth="240.0" promptText="КБМ" />
+            <ComboBox fx:id="ogranDrivers" layoutX="596.0" layoutY="89.0" prefHeight="43.0" prefWidth="240.0" promptText="Ограничения по водителям" />
          </children>
       </AnchorPane>
       <Label layoutX="326.0" layoutY="30.0" text="Ингосстрах">

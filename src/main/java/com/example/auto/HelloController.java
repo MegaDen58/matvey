@@ -27,7 +27,7 @@ public class HelloController {
     private Button userButton;
 
     @FXML
-    void adminEnter(ActionEvent event) throws IOException {
+    void adminEnter() throws IOException {
         try {
             Stage stageToClose  = (Stage) adminButton.getScene().getWindow();
             stageToClose.close();
@@ -43,13 +43,13 @@ public class HelloController {
         }
     }
     @FXML
-    void userEnter(ActionEvent event) {
+    void userEnter() {
         try {
             Stage stageToClose  = (Stage) userButton.getScene().getWindow();
             stageToClose.close();
 
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 1000, 600);
+            Scene scene = new Scene(fxmlLoader.load(), 850, 500);
             stage.setTitle("Authorization");
             stage.setScene(scene);
             stage.show();
